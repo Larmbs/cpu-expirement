@@ -1,12 +1,11 @@
-mod ram;
-mod alu;
-mod cpu;
+mod computer;
+use computer::*;
 
 fn main() {
-    let alu = alu::ALU;
-    let mut ram = ram::RAM::new();
+    let alu = ALU;
+    let mut ram = RAM64KB::new();
 
-    let mut cpu = cpu::CPU::from_custom(alu, ram);
+    let mut cpu = CPU::from_custom(alu, ram);
 
     
     println!("Hello, world!");
