@@ -1,5 +1,5 @@
 use super::alu::ALU;
-use super::ram::{RAM64KB, RAM};
+use super::{RAM64KB, RAM};
 
 /// CPU Instruction
 /// Size: 8bit
